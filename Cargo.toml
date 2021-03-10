@@ -25,8 +25,10 @@ rand_chacha = "~0.2.2"
 thiserror = "1.0.23"
 xor_name = "1.1.0"
 resource_proof = "0.8.0"
-sn_messaging = "~8.0.0"
-sn_data_types = "~0.16.0"
+sn_messaging = { git = "https://github.com/bochaco/sn_messaging.git", branch = "feat-register-client-msgs" }
+#sn_messaging = "~8.0.0"
+sn_data_types = { git = "https://github.com/bochaco/sn_data_types.git", branch = "feat-merkle-reg-for-seq" }
+#sn_data_types = "~0.16.0"
 
   [dependencies.bls]
   package = "threshold_crypto"
